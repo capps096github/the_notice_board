@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>The Notice Board User Profile</title>
+
+    <!-- CSS -->
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section>
+      <!-- Nav Bar -->
+      <nav
+        class="
+          md:flex md:justify-between
+          lg:flex lg:justify-between
+          md:px-4
+          px-2
+          py-5
+          fixed
+          top-0
+          left-0
+          right-0
+          bg-slate-900
+        "
+      >
+        <a
+          href="market_place.html"
+          class="
+            duration-300
+            transition-colors
+            flex
+            md:justify-start
+            lg:justify-start
+            justify-center
+            items-center
+            space-x-2
+            text-white
+            hover:text-amber-600 hover:no-underline
+          "
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current w-5 h-5"
+          >
+            <path
+              d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+            />
+          </svg>
+          <p class="text-sm sm:text-xs font-bold">Back to Market Place</p>
+        </a>
+
+        <!-- Logo -->
+        <a
+          href=""
+          class="space-x-2 flex justify-center items-center mt-4 md:mt-0"
+          title="THE NOTICE BOARD "
+        >
+          <div
+            class="
+              flex
+              text-amber-600
+              font-bold
+              hover:text-white hover:underline
+              items-center
+              space-x-2
+            "
+          >
+            <svg
+              class="fill-current w-10 h-10"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 11c0 .551-.448 1-1 1s-1-.449-1-1 .448-1 1-1 1 .449 1 1zm7-6v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-9 1.101c.323-.066.657-.101 1-.101s.677.035 1 .101v-2.101c0-.552-.447-1-1-1s-1 .448-1 1v2.101zm-8 2c.323-.066.657-.101 1-.101s.677.035 1 .101v-4.101c0-.552-.447-1-1-1s-1 .448-1 1v4.101zm2 9.798c-.323.066-.657.101-1 .101s-.677-.035-1-.101v2.101c0 .552.447 1 1 1s1-.448 1-1v-2.101zm2-4.899c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm6 2.899c-.323.066-.657.101-1 .101s-.677-.035-1-.101v4.101c0 .552.447 1 1 1s1-.448 1-1v-4.101zm2-4.899c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3z"
+              />
+            </svg>
+
+            <p class="">My Notice Board Profile</p>
+          </div>
+        </a>
+      </nav>
+
+      <!-- Profile with user name, email -->
+      <main>
+        <!-- profile -->
+        <div class="md:mt-20 lg:mt-20 mt-40 p-4 space-y-4 max-w-4xl mx-auto">
+          <!-- Image -->
+          <img
+            class="h-30 w-30 rounded-full mx-auto"
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            alt=""
+          />
+          <!-- Name and email -->
+          <div class="text-center space-y-2">
+            <h1 class="font-bold text-4xl leading-none text-slate-900">
+              Tom Cook
+            </h1>
+            <h2 class="text-lg font-medium leading-none text-gray-700 mb-6">
+              tom@example.com
+            </h2>
+          </div>
+        </div>
+
+        <!-- settings -->
+        <div class="bg-amber-600 py-4 space-y-4">
+          <div class="flex space-x-4 justify-center items-center mb-4">
+            <h1 class="font-extrabold text-lg text-slate-900 underline">
+              Configure your Settings
+            </h1>
+
+            <!--Android Settings Gear Svg-->
+            <svg
+              class="fill-current text-slate-900 w-10 h-10"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18
+            .97L7.44,17.95C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.95L19.05,18.97C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z
+            M12,18.5A1.5,1.5 0 0,1 10.5,17A1.5,1.5 0 0,1 12,15.5A1.5,1.5 0 0,1 13.5,17A1.5,1.5 0 0,1 12,18.5M12,14.5A3,3 0 0,0 9.5,12A3,3 0 0,0 12,9.5A3,3 0 0,0 14.5,12A3,3 0 0,0 12,14.5Z"
+              />
+              " />
+            </svg>
+          </div>
+
+          <!-- Change Font Drop down -->
+          <div class="flex justify-center items-center space-x-5">
+            <p class="text-sm font-bold leading-none text-gray-900 underline">
+              Change Font:
+            </p>
+            <div class="relative">
+              <select
+                title="font-selector"
+                name="font-selector"
+                class="
+                  block
+                  appearance-none
+                  w-full
+                  bg-gray-200
+                  border border-gray-200
+                  text-slate-900
+                  py-2
+                  px-4
+                  pr-8
+                  rounded
+                  leading-tight
+                  focus:outline-none focus:bg-white focus:border-gray-500
+                "
+                id="grid-state"
+              >
+                <option>Arial</option>
+                <option>Times New Roman</option>
+                <option>Courier New</option>
+                <option>Comic Sans MS</option>
+                <option>Georgia</option>
+                <option>Impact</option>
+                <option>Lucida Console</option>
+                <option>Lucida Sans Unicode</option>
+                <option>Palatino Linotype</option>
+                <option>Tahoma</option>
+                <option>Trebuchet MS</option>
+                <option>Verdana</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Change Notice Board Color selector-->
+          <div class="flex justify-center items-center space-x-5">
+            <p class="text-sm font-bold leading-none text-gray-900 underline">
+              Change Notice Board Color:
+            </p>
+            <div class="relative">
+              <select
+                title="font-selector"
+                name="font-selector"
+                class="
+                  block
+                  appearance-none
+                  w-full
+                  bg-gray-200
+                  border border-gray-200
+                  text-slate-700
+                  py-2
+                  px-4
+                  pr-8
+                  rounded
+                  leading-tight
+                  focus:outline-none focus:bg-white focus:border-gray-500
+                "
+                id="color-state"
+              >
+                <option>White</option>
+                <option>Black</option>
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>Pink</option>
+                <option>Purple</option>
+                <option>amber</option>
+                <option>Brown</option>
+                <option>Gray</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer
+        class="
+          w-full
+          bg-slate-900
+          max-w-container
+          mx-auto
+          py-4
+          text-center
+          space-y-2
+          items-center
+          justify-center
+          text-sm text-amber-500
+        "
+      >
+        <p>&copy; 2021 Notice Board Development</p>
+
+        <div class="flex items-center justify-center text-center mt-2">
+          <p class="mr-3 border-r border-gray-200 pr-3">
+            Mugisa Brian - 20/U/7823/PS - 2000707823
+          </p>
+          <p>All rights reserved.</p>
+        </div>
+
+        <p>
+          <a
+            class="hover:text-amber-600 hover:underline"
+            title="Follow Me on Twitter @xephas_official"
+            href="https://twitter.com/xephas_official"
+            >Follow me on Twitter</a
+          >
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
